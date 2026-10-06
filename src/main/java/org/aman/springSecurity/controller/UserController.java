@@ -32,9 +32,4 @@ public class UserController {
 
         return ResponseEntity.status(HttpStatus.CREATED).body(userRegistrationResponseDto);
     }
-
-    @GetMapping("/csrf-token")
-    public CsrfToken getCsrfToken(CsrfToken csrfToken) {
-        return csrfToken;
-    }
 }
